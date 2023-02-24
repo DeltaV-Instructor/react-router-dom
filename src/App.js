@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
 //1. Import our other components
-import AboutUs from './components/AboutUs';
-import OtherContent from './components/OtherContent';
+import AboutUs from './pages/AboutUs';
+import OtherContent from './pages/FAQ';
 import NavLayout from './components/NavLayout';
 //Docs = https://reactrouter.com/en/main/start/overview
-//2. Step one add npm i react-router-dom@6.0.2
-//https://www.npmjs.com/package/react-router-dom/v/6.0.2
+//2. Step one add npm i react-router-dom@6.4.4
+//https://www.npmjs.com/package/react-router-dom/v/6.4.4
 
 //3. Add the import for our router. 
 import {
