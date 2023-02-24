@@ -9,8 +9,8 @@ import HelpComponent from "./components/HelpComponent";
 //Docs = https://reactrouter.com/en/main/start/overview
 //2. Step one add npm i react-router-dom@6.4.4
 //https://www.npmjs.com/package/react-router-dom/v/6.4.4
-import Login from './components/Login'
-
+import Login from './components/Login';
+import Logout from './components/Logout';
 
 //3. Add the import for our router.
 import {
@@ -30,7 +30,8 @@ const router = createBrowserRouter(
       <Route path="about" element={<AboutUs />} />
 
       <Route path='login' element={<Login />} />
-
+      <Route path='logout' element={<Logout />} />
+      
       <Route path="help" element={<HelpComponent />}>
         <Route path="faq" element={<FAQ /> } />
       </Route>
