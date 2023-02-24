@@ -12,7 +12,7 @@ body {
 }
 * {
   color: #fff;
-  margin: 0;
+  /* margin: 0; */
 }
 p {
   margin: 20px 0;
@@ -26,13 +26,20 @@ button {
   cursor: pointer;
 }
 
+header{
+margin-bottom: 30px;
+
+}
 /* navbar */
 header nav {
   display: flex;
+  padding: 20px;
   gap: 16px;
   justify-content: end;
   max-width: 1200px;
   margin: 0 auto;
+  background: var(--primary)
+  
 }
 header nav h1 {
   margin-right: auto;
@@ -44,10 +51,14 @@ header nav a {
   border-radius: 4px;
 }
 header nav a.active {
-  background: var(--primary);
+  background: var(--secondary);
 }
 
 /* page content */
+main {
+  background: var(--primary);
+
+}
 
 /* help layout */
 
