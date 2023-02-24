@@ -18,6 +18,8 @@ class NavHeader extends React.Component {
               <NavLink to="help">Get Help</NavLink>
             </nav>
           </header>
+
+          
           <main>
             <Outlet />
           </main>

@@ -32,8 +32,9 @@ const router = createBrowserRouter(
 
       <Route path='login' element={<Login />} />
       <Route path='logout' element={<Logout />} />
-      <Route path='profile' element={<Profile />} />
-      
+
+      {/* <Route path='profile' element={<Profile />} /> */}
+
       <Route path="help" element={<HelpComponent />}>
         <Route path="faq" element={<FAQ /> } />
       </Route>
@@ -46,6 +47,7 @@ class App extends React.Component {
     return (
       <>
         <RouterProvider router={router} />
+        <Profile />
       </>
     );
   }
