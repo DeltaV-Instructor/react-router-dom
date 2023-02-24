@@ -79,3 +79,7 @@ main {
   border-color: #f84417;
 }
 /* faq */
+.login-button {
+  border: 5px solid white;
+  margin-right: 60px;
+}
