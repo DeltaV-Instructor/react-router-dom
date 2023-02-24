@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { withAuth0 } from "@auth0/auth0-react";
-import axios from 'axios';
+import axios from "axios";
 class SecretContent extends Component {
   constructor(props) {
     super(props);
@@ -15,25 +15,37 @@ class SecretContent extends Component {
       const jwt = res.__raw;
       console.log("token: ", jwt);
 
-      const config = {
-        headers: { Authorization: `Bearer ${jwt}` },
-        method: "get",
-        baseURL: process.env.REACT_APP_SERVER,
-        url: "/our-route",
-      };
+      // const config = {
+      //   headers: { Authorization: `Bearer ${jwt}` },
+      //   method: "get",
+      //   baseURL: process.env.REACT_APP_SERVER,
+      //   url: "/our-route",
+      // };
       //build URL
-      let axiosData = await axios(config);
+      // let axiosData = await axios(config);
 
-      let treasureData = ["gold", "gems", "pizza"];
+      let treasureData = [
+        { treasure: "gold" },
+        { treasure: "gems" },
+        { treasure: "pizza" },
+      ];
+      this.setState({
+        treasure: treasureData,
+      });
     }
-
-    this.setState({
-      treasure: treasureData,
-    });
   }
   render() {
     console.log(this.state.treasure);
-    return <h1>SecretContent we hope</h1>;
+
+    let allLoot = this.state.treasure((loot, index) => {
+      <li key={index}>{loot.treasure}</li>;
+    });
+    return (
+      <>
+        <h1>SecretContent we hope</h1>
+        <ul>{allLoot}</ul>
+      </>
+    );
   }
 }
 
