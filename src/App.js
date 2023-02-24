@@ -12,7 +12,7 @@ import HelpComponent from "./components/HelpComponent";
 import Login from './components/Login';
 import Logout from './components/Logout';
 import Profile from './components/Profile';
-
+import SecretContent from './pages/SecretContent'
 //3. Add the import for our router.
 import {
   createBrowserRouter,
@@ -48,6 +48,7 @@ class App extends React.Component {
       <>
         <RouterProvider router={router} />
         <Profile />
+        <SecretContent />
       </>
     );
   }
