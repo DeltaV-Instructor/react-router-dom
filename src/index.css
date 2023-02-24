@@ -26,9 +26,8 @@ button {
   cursor: pointer;
 }
 
-header{
-margin-bottom: 30px;
-
+header {
+  margin-bottom: 30px;
 }
 /* navbar */
 header nav {
@@ -38,8 +37,7 @@ header nav {
   justify-content: end;
   max-width: 1200px;
   margin: 0 auto;
-  background: var(--primary)
-  
+  background: var(--primary);
 }
 header nav h1 {
   margin-right: auto;
@@ -57,9 +55,27 @@ header nav a.active {
 /* page content */
 main {
   background: var(--primary);
-
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* help layout */
+.help-page nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
 
+.help-page nav  a {
+  border: 5px solid white;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.help-page nav a:hover {
+  border-color: #1097e5;
+}
+.help-page nav a:active {
+  border-color: #f84417;
+}
 /* faq */

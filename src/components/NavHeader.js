@@ -11,7 +11,7 @@ class NavHeader extends React.Component {
               <h1>React Router</h1>
               <NavLink to="/">Home</NavLink>
               <NavLink to="about">About Us</NavLink>
-              <NavLink to="faq">Faq</NavLink>
+              <NavLink to="help">Get Help</NavLink>
             </nav>
           </header>
           <main>

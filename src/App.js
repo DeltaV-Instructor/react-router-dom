@@ -4,7 +4,8 @@ import "./App.css";
 import AboutUs from "./pages/AboutUs";
 import FAQ from "./pages/FAQ";
 import NavHeader from "./components/NavHeader";
-import Home from './pages/Home';
+import Home from "./pages/Home";
+import HelpComponent from "./components/HelpComponent";
 //Docs = https://reactrouter.com/en/main/start/overview
 //2. Step one add npm i react-router-dom@6.4.4
 //https://www.npmjs.com/package/react-router-dom/v/6.4.4
@@ -21,9 +22,14 @@ import {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<NavHeader />}>
+
       <Route index element={<Home />} />
+
       <Route path="about" element={<AboutUs />} />
-      <Route path="faq" element={<FAQ />} />
+
+      <Route path="help" element={<HelpComponent />}>
+        <Route path="faq" element={<FAQ /> } />
+      </Route>
     </Route>
   )
 );
