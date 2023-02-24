@@ -82,4 +82,17 @@ main {
 .login-button {
   border: 5px solid white;
   margin-right: 60px;
+  margin: 20px 0px 20px 20px;
+  background: var(--primary);
+}
+
+main section {
+  width: 90%;
+  margin: 0 auto;
+  background: var(--secondary);
+  border: 5px solid white;
+}
+
+.profile-margin {
+  margin-top: 20px;
 }
