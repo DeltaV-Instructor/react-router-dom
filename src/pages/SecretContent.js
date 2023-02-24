@@ -35,10 +35,10 @@ class SecretContent extends Component {
     }
   }
   render() {
-    console.log(this.state.treasure);
+    console.log('jkhlkhljhljhlkh',this.state.treasure);
 
-    let allLoot = this.state.treasure((loot, index) => {
-      <li key={index}>{loot.treasure}</li>;
+    let allLoot = this.state.treasure.map((loot, index) => {
+      return <li key={index}>{loot.treasure}</li>;
     });
     return (
       <>
