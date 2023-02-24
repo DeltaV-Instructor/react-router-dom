@@ -6,6 +6,7 @@ import FAQ from "./pages/FAQ";
 import NavHeader from "./components/NavHeader";
 import Home from "./pages/Home";
 import HelpComponent from "./components/HelpComponent";
+import Login from './components/Login'
 //Docs = https://reactrouter.com/en/main/start/overview
 //2. Step one add npm i react-router-dom@6.4.4
 //https://www.npmjs.com/package/react-router-dom/v/6.4.4
