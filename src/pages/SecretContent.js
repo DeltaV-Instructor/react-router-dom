@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { withAuth0 } from "@auth0/auth0-react";
 import axios from "axios";
+
 class SecretContent extends Component {
   constructor(props) {
     super(props);
@@ -35,7 +36,7 @@ class SecretContent extends Component {
     }
   }
   render() {
-    console.log('jkhlkhljhljhlkh',this.state.treasure);
+    console.log("jkhlkhljhljhlkh", this.state.treasure);
 
     let allLoot = this.state.treasure.map((loot, index) => {
       return <li key={index}>{loot.treasure}</li>;

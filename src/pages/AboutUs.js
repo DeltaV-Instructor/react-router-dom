@@ -31,7 +31,7 @@ class AboutUs extends React.Component {
           bears muffin candy canes gummies. Marshmallow cake oat cake cotton
           candy pudding tootsie roll gingerbread.
         </p>
-       
+
         <p>
           Caramels sugar plum jelly sweet roll liquorice toffee. Ice cream jelly
           candy croissant cookie topping soufflé cheesecake. Carrot cake brownie
@@ -44,7 +44,6 @@ class AboutUs extends React.Component {
           toffee marzipan cake apple pie. Liquorice jujubes wafer brownie
           pastry. Caramels gingerbread powder fruitcake croissant.
         </p>
-      
       </>
     );
   }

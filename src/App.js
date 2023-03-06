@@ -7,12 +7,14 @@ import NavHeader from "./components/NavHeader";
 import Home from "./pages/Home";
 import HelpComponent from "./components/HelpComponent";
 //Docs = https://reactrouter.com/en/main/start/overview
+
 //2. Step one add npm i react-router-dom@6.4.4
+
 //https://www.npmjs.com/package/react-router-dom/v/6.4.4
-// import Login from "./components/Login";
-// import Logout from "./components/Logout";
-// import Profile from "./components/Profile";
-// import SecretContent from "./pages/SecretContent";
+import Login from "./components/Login";
+import Logout from "./components/Logout";
+import Profile from "./components/Profile";
+import SecretContent from "./pages/SecretContent";
 // import { withAuth0 } from "@auth0/auth0-react";
 
 //3. Add the import for our router.
@@ -32,11 +34,14 @@ const router = createBrowserRouter(
       <Route path="about" element={<AboutUs />} />
 
       {/* 
+      
+     
+      */}
+      <Route path='profile' element={<Profile />} /> 
       <Route path="login" element={<Login />} />
       <Route path="logout" element={<Logout />} /> 
-      <Route path='profile' element={<Profile />} /> 
-      */}
-
+      <Route path="secretcontent" element={<SecretContent />} />
+       
       <Route path="help" element={<HelpComponent />}>
         <Route path="faq" element={<FAQ />} />
       </Route>
@@ -54,5 +59,5 @@ class App extends React.Component {
   }
 }
 
-// export default withAuth0(App);
+
 export default App;

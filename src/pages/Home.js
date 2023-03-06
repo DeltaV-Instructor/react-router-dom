@@ -5,7 +5,7 @@ class Home extends React.Component {
     return (
       <>
         <div>WELCOME HOME</div>
-        <img src={cat} alt={'cat'}/>
+        <img src={cat} alt={"cat"} />
       </>
     );
   }
